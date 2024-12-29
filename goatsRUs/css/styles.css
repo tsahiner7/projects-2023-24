@@ -1,0 +1,254 @@
+/*
+    CSS Reset
+    Adopted from: http://meyerweb.com/eric/tools/css/reset/
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    line-height: 1.7;
+}
+
+header {
+    margin: 2em 0;
+}
+
+h1, h2 {
+    font-family: "Arima", system-ui;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin: .5em 0;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+article, section {
+    width: 35%;
+    margin: 0 auto;
+}
+
+p {
+    margin: .7em 0;
+}
+
+img {
+    max-width: 100%; /* make images responsive */
+    padding: .4em;
+    border: 1px solid #e3e3e5;
+    margin: 0 auto;
+    display: block;
+}
+
+/******************
+    Footer
+******************/
+footer {
+    background-color: #e3e3e5;
+    height: 2em;
+    clear: both;
+}
+
+footer p {
+    text-align: right;
+    margin: 0 1em;
+    padding-top: .2em;
+}
+
+/******************
+    Form
+******************/
+
+form {
+    width: 100%;
+}
+fieldset {
+    margin: 2em;
+    padding: 0 2em 2em 2em;
+    border: 1px solid #e3e3e5;
+    border-radius: .5em;
+}
+legend {
+    font-size: 1.2em;
+}
+input, select {
+    padding: 5px;
+    font-size: 16px;
+    display: block;
+}
+label {
+    display: inline-block;
+    margin-top: 1.5em;
+}
+#newTab {
+    padding: 0;
+    border: none;
+    margin: 0;
+    display: inline;
+}
+.helpText {
+    margin-bottom: 0;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    display: inline;
+    margin-left: 2em;
+}
+/******************
+    Form Buttons
+******************/
+.formButtons {
+    margin: 2em;
+}
+input[type="submit"],
+input[type="reset"] {
+    display: inline-block;
+    padding: .7em;
+    border: 1px solid #ddd;
+}
+input[type="submit"] {
+    margin-right: 2em;
+    background-color: #A4665E;
+    color: #fff;
+}
+input[type="reset"] {
+    background-color: #fff;
+    color: #A4665E;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover{
+    background-color: #fff;
+    color: #777;
+    transition: .5s;
+}
+
+/********************
+Sticky Footer
+********************/
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1 0 auto;
+}
+footer{
+    flex-shrink: 0;
+}
+
+/*******************
+Link Styles
+*******************/
+a{
+    color: #A4665E;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+a:hover{
+    color: #AAA9AD;
+}
+a img{
+    transition: background-color 0.3s;
+}
+a img:hover{
+    background-color: #A4665E;
+}
+/*************************
+  Main menu
+*************************/
+nav {
+    background-color: #e3e3e5;
+}
+  
+ul {
+    display: flex; /* Acts like a float */
+    list-style: none;
+    justify-content: center;
+}
+  
+li {
+    background-color: #e3e3e5;
+    position: relative;
+    transition-duration: 0.5s;
+}
+  
+li:hover {
+    background-color: #A4665E;
+}
+  
+li a {
+    text-decoration: none;
+    color: #000;
+    display: block; /* need anchor element to be block so they take padding */
+    padding: 1em;
+}
+  
+li a:hover {
+    color: #fff;
+}
+ul li ul{
+    position: absolute;
+    min-width: 10.3em;
+    margin: 0;
+    left: 0;
+    display: none;
+}
+ul li:hover ul,
+ul li ul:hover {
+    display: block;
+}
+li ul li:last-child {
+    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em;
+}
+ul li:hover ul,
+ul li ul:hover,  /* <------ ADD a comma */
+ul li:focus-within ul { /* <------ ADD this line */
+    display: block;
+}
+/********************
+    Skip Link  
+*********************/
+.skipLink{
+    position: absolute;
+    left: -9999px;
+    padding: .5em .25em;
+}
+.skipLink:focus{
+    left: 0;
+
+}
+
+/* Reqired Form Filds */
+.isRequired{
+    color: #db311b;
+}

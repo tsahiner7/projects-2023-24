@@ -1,0 +1,264 @@
+* {box-sizing: border-box;}
+
+body {
+    background-color: #c1f9c6;
+    color: black;
+    font-family: "Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-weight: 400;
+    margin: 0;
+}
+
+.brand {
+    color: gold;
+    background-color: transparent;
+    font-size: 1.25rem;
+}
+
+header {
+    background-image: url("../images/gp_back1.png");
+    background-size: auto;
+}
+
+main {
+    background-color: white;
+    color: black;
+    padding: .75em 1em;
+}
+
+ul {list-style: none;}
+
+nav {
+    background-color: #343a40;
+    color: rgba(255,255,255,.5);
+}
+
+nav ul {
+    margin: 0;
+}
+
+nav li {padding: .3em 0;}
+
+nav a {
+    color: rgba(255,255,255,.5);
+    text-decoration: none;
+    background-color: transparent;
+}
+
+nav a:hover {
+    color: white;
+    background-color: #343a40;
+}
+
+footer {
+    color: #fff;
+    background-color: black;
+    text-align: center;
+    padding: 1em;
+}
+
+#writers {
+    font-size: 1.2em;
+}
+
+.topics {
+    background-color: #04700d;
+    border-radius: 1em;
+    padding: .5em;
+    color: gold;
+    text-align: center;
+}
+.topics h2 {font-size: 1em;}
+.topics p {font-size: .5em;}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* PROJECT02 */
+
+/* requirement #1  */
+header img{
+    max-width: 100%;
+}
+
+nav ul li{
+    margin: 0.5em;
+}
+nav a:hover{
+    transition: ease 0.5s;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+}
+
+@media screen and (min-width:768px){
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 0.5em 0.55em;
+}
+}
+
+footer {
+    color: #fff;
+    background-color: black;
+    text-align: center;
+    padding-top: 0.5em;
+}
+footer address{
+    padding-bottom: 1em;
+}
+
+/* requirement #2 */
+section{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+
+}
+    
+h1{
+    grid-column: 1 / span 3; 
+    text-align: center;
+    
+}
+#requirement2{
+    grid-column: 1 / span 3;
+    display: flex;
+    flex-direction: column;
+}
+    
+#requirement2 a{
+    padding: .5em;
+    width: 15%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.topics{
+    justify-content: space-around;
+    margin: 0.5em;
+} 
+
+
+@media screen and (min-width: 768px) {
+    h1{
+        grid-column: 1 / span 3; 
+        text-align: center;
+        
+    }
+    #requirement2{
+        grid-column: 1 / span 3;
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+    }
+    #comicImg {
+        flex: 0 0 30%; 
+        width: 30%;
+      }
+      
+    #requirement2 a  {
+        flex: 0 0 10%; 
+        padding: 0.5em; 
+        width: 10%;
+        align-self: center; 
+    }
+    
+    #requirement2 article{
+        width: 60%;
+    }
+
+    #requirement2 article h2{
+        margin-top: 0;
+    }
+
+}
+
+/* requirement 3 */
+
+
+#requirement3{
+    background-color: beige;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#requirement3 img{
+    padding: 2px;
+    border: 2px solid white;
+}
+@media screen and (min-width: 768px) {
+    #requirement3 img:hover{
+        transform: scale(1.05);
+        transition:  transform .3s ease;
+    }
+
+}
+
+@media print {
+    #requirement3 img:nth-last-child(-n+4) {
+      display: none;
+    }
+}
+
+/* requirement 4 */
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+span{
+    color: red;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+button{
+    border-radius: .7em;
+    padding: .3em;
+    color: white;
+    background-color: gray;
+}
+#submit{
+    background-color: green;
+}
+#writers{
+    display: flex;
+    flex-direction: row;
+}
+
+/* requirement 4 */
+#requirement4{
+    display: inline;
+}
+#writers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#writers li{
+    width: 50%;
+}
+#writers li:nth-child(8){
+    order: -2;
+}
+#writers li:nth-child(31){
+    order: -1;
+}

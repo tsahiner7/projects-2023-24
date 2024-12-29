@@ -1,0 +1,49 @@
+/* Author: Tolga Sahiner
+Date: 12/13/2023 */
+
+/* Main Styles */
+main{
+  max-width: 80%;
+}
+h2, p, form{
+  text-align: center;
+}
+/* Section Styles */
+section{
+  box-shadow: 2px 2px 10px bisque;
+  border-radius: 0 1em 0 1em;
+  margin: 2em;
+  padding: 1em;
+}
+/* Form Styles */
+form{
+  padding: 1em 0;
+}
+form input, form textarea{
+  margin: 1em;
+  max-width: 100%;
+}
+textarea{
+  height: 90px;
+  width: 75%;
+  border-radius: .5em;
+  border: 1px solid #A87B50;
+}
+#buttons input{
+  display: inline-block;
+  border: 1px solid bisque;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: black;
+  color: bisque;
+  padding: 8px;
+  text-align: center;
+}
+#buttons input:hover{
+  color: orangered;
+  text-shadow: 1px 1px 6px orangered;
+  border: 1px solid orangered;
+}
+#inputSections{
+  margin-bottom: 1em;
+}

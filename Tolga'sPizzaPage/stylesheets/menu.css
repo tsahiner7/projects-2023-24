@@ -1,0 +1,70 @@
+/* Author: Tolga Sahiner
+Date: 12/13/2023 */
+
+/* Heading Styles */
+h2{
+    text-align: center;
+}
+/* Table Styles */
+dt{
+    margin: .5em;
+    font-weight: bold;
+    color: #fa6b0c;
+    padding: 6px;
+}
+dd{
+    margin-bottom: 16px;
+    padding: 4px;
+}
+.price{
+    font-family: serif;
+    font-weight: normal;
+    color: tomato;
+}
+/* General Menu Stryles */
+p{
+    padding: 1em;
+}
+section{
+    float: left;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: 1px 1px 8px #fa6b0c;
+    margin: 1em 0;
+    width: 100%;
+    max-width: 100%;
+}
+main{ width: 55%;}
+/* Table Styles */
+table{
+    margin: 0 auto;
+    padding: 1em;
+    max-width: 100%;
+}
+tr, th{
+
+    text-align: center;
+}
+th{
+    text-decoration: underline;
+}
+th, td{
+    padding: 4px 1em;
+}
+#bigKahuna{
+    text-align: center;
+}
+/* Img Styles */
+section img{
+    width: 300px;
+    max-width: 100%;
+    float: right;
+    padding: 1em;
+    border-radius: 1.5em;
+}
+/* Back To Top Icon Styles */
+#backToTop{
+    clear: both;
+    text-align: center;
+}
+

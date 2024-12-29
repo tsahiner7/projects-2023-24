@@ -1,0 +1,13 @@
+community-garden.webp source: https://thenatureofhome.com/10-best-beginner-tips-for-your-community-garden-plot/
+smiling-gardener source: https://www.westend61.de/en/photo/UUF21019/smiling-beautiful-woman-with-vegetable-crate-sitting-in-community-garden
+soil source: https://www.rawpixel.com/image/5920484/photo-image-flower-public-domain-nature
+sun source: https://static.scientificamerican.com/sciam/cache/file/43D27305-AF9A-42FE-B06C7A4F81F94166_source.jpg?w=1200
+sizdes source: https://ponicslife.com/vegetable-container-size-standards-with-chart/
+vegetablesPlant source: https://platthillnursery.com/es/ten-garden-vegetables-fruits-for-beginners/
+good-bugs source: https://www.eachgreencorner.org/2022/04/15/good-critters-and-bugs-for-the-soil/
+watering: https://www.vulcantermite.com/garden-pest-control/soil-quality-pest-control-whats-connection/
+Colors:
+Dark Green: #03692F
+Soil Brown: #6D4F02
+Light Green: #8FBC8F  -- #5B875C(Darker)
+Light Brown: #e4e0dc

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Order Goat Cheese - Goats 'R Us</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="You can order our natural hand crafted ceeses here.">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Goats 'R Us</h1>
+            <nav aria-label="Main Menu">
+                <ul role="menubar" aria-label="Main Menu">
+                    <li role="none"><a href="/index.html" role="menuitem">Home</a></li>
+                    <li role="none"><a href="/breeds.html" role="menuitem">Breeds</a></li>
+                    <li role="none"><a href="/products.html" role="menuitem" aria-haspopup="true">Order Products</a>
+                        <ul aria-label="Product Sub Menu" role="menu">
+                            <li role="none"><a href="#" role="menuitem">Goat Milk Soap</a></li>
+                            <li role="none"><a href="order/orderCheese.html" role="menuitem">Cheese</a></li>
+                            <li role="none"><a href="#" role="menuitem">Milk</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>Cheese Order Form</h2>
+                <p>Please fill out the below form to receive handmade cheese crafted by our family!</p>
+                <form action="http://itins3.madisoncollege.edu/echo.php" method="post">
+                    <fieldset>
+                        <legend>Your Details</legend>
+                        <p>Inputs with an asterisks (*) are required</p>
+                        <label for="firstName">First Name <span class="isRequired">*</span></label>
+                        <input type="text" name="firstName" id="firstName" required>
+
+                        <label for="lastName">Last Name <span class="isRequired">*</span></label>
+                        <input type="text" name="lastName" id="lastName" required>
+
+                        <label for="email">Email Address <span class="isRequired">*</span></label>
+                        <input type="email" name="email" id="email" required>
+
+                        <label for="phoneNumber">Phone Number <span class="isRequired">*</span></label>
+                        <input type="tel" name="phoneNumber" id="phoneNumber" aria-describedby="helpText" required>
+                        <p class="helpText" id="helpText">Phone number must be 10 digits and include dashes.</p>
+
+                        <label for="city">City <span class="isRequired">*</span></label>
+                        <input type="text" name="city" id="city" required>
+
+                        <label for="pickState">Choose a state <span class="isRequired">*</span></label>
+                        <select name="pickState" id="pickState" required>
+                            <option value="" disabled selected hidden>--select--</option>
+                            <option value="01">Illnois</option>
+                            <option value="02">Wisconsin</option>
+                            <option value="03">Michigan</option>
+                            <option value="04">Minnesota</option>
+                        </select>
+
+                        <label for="zip">Zip <span class="isRequired">*</span></label>
+                        <input type="text" name="zip" id="zip" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Choose a type of goat cheese</legend>
+                        <input type="checkbox" name="fog" id="fog">
+                        <label for="fog">Humboldt Fog</label>
+                        <br>
+
+                        <input type="checkbox" name="garrotxa" id="garrotxa">
+                        <label for="garrotxa">Garrotxa</label>&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.cheese.com/garrotxa/" target="_blank">
+                            Learn more
+                            <img src="../images/newTabIcon.png" id="newTab" width="13" alt="Opens in a new tab">
+                        </a>
+                        <br>
+
+                        <input type="checkbox" name="brunet" id="brunet">
+                        <label for="brunet">Brunet</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>This this a gift?</legend>
+                        <input type="radio" name="gift" id="yesGift" value="yesGift">
+                        <label for="yesGift">Yes</label>
+
+                        <input type="radio" name="gift" id="noGift" value="noGift">
+                        <label for="noGift">No</label>
+                    </fieldset>
+
+                    <input type="checkbox" name="coupon" id="coupon" value="yesCoupon">
+                    <label for="coupon">I want to receive coupons and special offers.</label>
+
+                    <div class="formButtons">
+                        <input type="submit" value="Place Order">
+                        <input type="reset" value="Start Over">
+                    </div>
+                </form>
+
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; Goats 'R Us 2019</p>
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,88 @@
+<!-- Author: Tolga Sahiner
+Date: 11/28/2023 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us!</title>
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="stylesheet" href="stylesheets/contact.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <img id="logoImg" src="images/logo.png" alt="logo">
+        <nav>
+            <a href="index.html">Home</a> &backsim; 
+            <a href="menu.html">Menu</a> &backsim;
+            <a href="join.html">Join Our World</a> &backsim;
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Hours</h2>
+            <p><em>Call us for more information, special meetings and catering!</em></p>
+            <p>Everyday: 11 A.M. - Late</p>
+        </section>
+        <section>
+            <h2>Location</h2>
+            <p>701 Crown st. Madison, WI</p>
+            <p>Phone: <a href="tel:608-254-7877">608-254-7877</a></p>
+        </section>
+        <section>
+            <h2>Leave Us Your Contact Information</h2>
+            <p><em>If you want us to reach you out leave your information please.</em></p>
+            <form action="http://itins3.madisoncollege.edu/echo.php" method="post">
+                <div id="inputSections">
+                <label for="name">Name</label><br>
+                <input type="text" name="name" id="name" required>
+                <br>
+                <label for="email">Email</label><br>
+                <input type="text" name="email" id="email" required>
+                <br>
+                <label for="cellPhone">Phone</label><br>
+                <input type="text" name="cellPhone" id="cellPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Please follow this format: ###-###-#### (3 digits, a dash, 3 digits, a dash, 4 digits)" required>
+                <br>
+                <label for="subject">Subject</label><br>
+                <input type="text" name="subject" id="subject" required>
+                </div>
+                <label for="comment">What would you like to hear from us?</label><br>    
+                <textarea name="comment" id="comment" required></textarea>  
+                <div id="buttons">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Clear">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-links">
+                <a id="orderNow" href="contact.html">Order Now!</a>
+                <div id="social-and-logo">
+                    <a id="facebook" href="https://www.facebook.com/madisoncollege/" target="_blank">
+                        <img src="images/square_facebook_icon.svg" alt="facebook">
+                    </a>
+                    <a id="instagram" href="https://www.instagram.com/madisoncollege/" target="_blank">
+                        <img src="images/instagram_icon.svg" alt="instagram">    
+                    </a>
+                    <a id="twitterx" href="https://twitter.com/MadisonCollege" target="_blank">
+                        <img src="images/x_twitter_icon.svg" alt="twitterX">
+                    </a>
+                    <a id="phone" href="tel:+16082547877" target="_blank">
+                        <img src="images/phone_icon.svg" alt="+16082466100">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <address class="footer-developer">
+                Developed by: <a href="mailto:tsahiner@madisoncollege.edu">Tolga Sahiner</a>
+            </address>
+        </div>
+    </footer>
+</body>
+</html>

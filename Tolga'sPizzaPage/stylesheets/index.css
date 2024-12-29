@@ -1,0 +1,39 @@
+/* Author: Tolga Sahiner
+Date: 11/30/2023 */
+
+/* Slogan Styles */
+.slogan{
+    display: block;
+    text-align: center;
+    line-height: 0.5;
+    color: orangered;
+}
+/* Description Styles */
+.description{
+    clear: left;
+    line-height: 2;
+    max-width: 80%;
+    box-shadow: 1px 1px 8px;
+    border-radius: 0 1em 0 1em;
+    margin: 0 auto;
+    padding: 1em;
+}
+.description img{
+    max-width: 100%;
+}
+/* Hours Styles */
+#hours{
+    text-align: center;
+    color: orangered;
+}
+/* Img Syles */
+#sliced-pizza{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: auto;
+    width: 300px;
+    float: left;
+    clear: left;
+    padding: 1em 1em 0 1em;
+}

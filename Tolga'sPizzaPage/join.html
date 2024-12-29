@@ -1,0 +1,143 @@
+<!-- Author: Tolga Sahiner
+Date: 11/28/2023 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Our World</title>
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="stylesheet" href="stylesheets/join.css">
+</head>
+<body>
+    <header>
+        <h1>Join Our World</h1>
+        <img id ="logoImg" src="images/logo.png" alt="logo">
+        <nav>
+            <a href="index.html">Home</a> &backsim; 
+            <a href="menu.html">Menu</a> &backsim;
+            <a href="join.html">Join Our World</a> &backsim;
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Don't Wait Too Much!</h2>
+            <p>It's time to join our Pizza World! We have a  <strong>special deal</strong> for limited time. Join our world with your e-mail and phone number, get a <strong>free speciality pizza.</strong></p>
+            <p>If you get our 1 year pizza-lover  membership for just $50, you will have %10 off of your every order <em>(Excludes alcohol)</em>.</p>
+        </section>
+        <section>
+            <h2>Join Our World Now</h2>
+            <form action="http://itins3.madisoncollege.edu/echo.php" method="post">
+                <div id="inputSections">
+                    <label for="name">Name</label><br>
+                    <input type="text" name="name" id="name" required>
+                    <br>
+                    <label for="lastName">Last Name</label><br>
+                    <input type="text" name="lastName" id="lastName" required>
+                    <br>
+                    <label for="email">Email</label><br>
+                    <input type="text" name="email" id="email" required>
+                    <br>
+                    <label for="cellPhone">Phone</label><br>
+                    <input type="text" name="cellPhone" id="cellPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Please follow this format: ###-###-#### (3 digits, a dash, 3 digits, a dash, 4 digits)" required>
+                    <br>
+                    <label for="membership">Choose a Membership Plan</label><br>
+                    <br>
+                    
+                    <select name="membership" id="membership" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="classicMembership">Classic Membership</option>
+                        <option value="pizza-lover">Pizza-Lover ($50)</option>
+                    </select>
+                    <fieldset>
+                        <legend>Check Your Free Speciality Pizza</legend>
+                        <label for="tolgasSpecial">
+                            <input type="radio" name="typeOfPizza" id="tolgasSpecial" value="tolgasSpecial" checked>Tolga's Special
+                        </label>
+                        <br>
+                        <label for="vegetarian">
+                            <input type="radio" name="typeOfPizza" id="vegetarian" value="vegetarian">Vegetarian
+                        </label>
+                        <br>
+                        <label for="macAndChz">
+                            <input type="radio" name="typeOfPizza" id="macAndChz" value="macAndChz">Mac & Cheese
+                        </label>
+                        <br>
+                        <label for="taco">
+                            <input type="radio" name="typeOfPizza" id="taco" value="taco">Taco
+                        </label>
+                        <br>
+                        <label for="allMeat">
+                            <input type="radio" name="typeOfPizza" id="allMeat" value="allMeat">All Meat
+                        </label>
+                        <br>
+                        <label for="allMeatBbq">
+                            <input type="radio" name="typeOfPizza" id="allMeatBbq" value="allMeatBbq">All Meat BBQ
+                        </label>
+                        <br>
+                        <label for="hawaiian">
+                            <input type="radio" name="typeOfPizza" id="hawaiian" value="hawaiian">Hawaiian
+                        </label>
+                        <br>
+                        <label for="buffaloChicken">
+                            <input type="radio" name="typeOfPizza" id="buffaloChicken" value="buffaloChicken">Buffalo Chicken
+                        </label>
+                        <br>
+                        <label for="BbqChicken">
+                            <input type="radio" name="typeOfPizza" id="BbqChicken" value="BbqChicken">BBQ Chicken
+                        </label>
+                        <br>
+                        <label for="alfredoChickenAndBroccoli">
+                            <input type="radio" name="typeOfPizza" id="alfredoChickenAndBroccoli" value="alfredoChickenAndBroccoli">Alfredo Chicken and Broccoli
+                        </label>
+                        <br>
+                        <label for="baconDouble">
+                            <input type="radio" name="typeOfPizza" id="baconDouble" value="baconDouble">Bacon Double Cheeseburger
+                        </label>
+                    </fieldset>
+                </div>
+                <fieldset>
+                    <legend>How do you want to get informed for special deals?</legend>  
+                      <input type="checkbox" name="contactType1" id="contactType1" value="E-Mail">
+                      <label for="contactType1">E-Mail</label>
+                
+                      <input type="checkbox" id="contactType2" name="contactType2" value="Phone">
+                      <label for="contactType2">Phone</label>
+                    </fieldset>
+                <div id="buttons">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Clear">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-links">
+                <a id="orderNow" href="contact.html">Order Now!</a>
+                <div id="social-and-logo">
+                    <a id="facebook" href="https://www.facebook.com/madisoncollege/" target="_blank">
+                        <img src="images/square_facebook_icon.svg" alt="facebook">
+                    </a>
+                    <a id="instagram" href="https://www.instagram.com/madisoncollege/" target="_blank">
+                        <img src="images/instagram_icon.svg" alt="instagram">    
+                    </a>
+                    <a id="twitterx" href="https://twitter.com/MadisonCollege" target="_blank">
+                        <img src="images/x_twitter_icon.svg" alt="twitterX">
+                    </a>
+                    <a id="phone" href="tel:+16082547877" target="_blank">
+                        <img src="images/phone_icon.svg" alt="+16082466100">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <address class="footer-developer">
+                Developed by: <a href="mailto:tsahiner@madisoncollege.edu">Tolga Sahiner</a>
+            </address>
+        </div>
+    </footer>
+</body>
+</html>

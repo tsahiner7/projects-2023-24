@@ -1,0 +1,22 @@
+/*******************************
+    Gardening Tips page
+*******************************/
+
+#tipsBkgd {
+  background-image: url(../images/veggieBackground.jpg);
+  padding: 3em;
+}
+
+#tipsBkgd div {
+  background-color: #e4e0dc;
+  opacity: 95%;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2em;
+}
+li{
+  margin: 2em 0 ;
+}
+h1{
+  text-align: center;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!--
+      PROJECT 2
+      Author: Tolga Sahiner
+      Date: 03/11/2024
+
+      Filename: contact.html
+     -->
+        <title>Project 2</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.min.css">
+        <link rel="icon" type="image/png" sizes="16x16" href="wolfie.ico">
+    </head>
+
+    <body>
+        <header>
+            <img src="images/gp_logo.png" alt="Golden Pulp" />
+            <nav>
+                <ul>
+                    <li><a class="brand" href="index.html">GoldenPulps</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Comic Books</a></li>
+                    <li><a href="sneakpeek.html">Sneak Peek</a></li>
+                    <li><a href="#">Artists</a></li>
+                    <li><a href="writers.html">Writers</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h1>Contact Us</h1>
+                <form id="multipleForm" method="post"
+                    action="http://itins3.madisoncollege.edu/echo.php">
+                        <p><span>* </span>- required fields</p>
+                        <label for="firstName"><span>* </span>First Name</label>
+                        <input type="text" id="firstName" placeholder="First Name"
+                            name="firstName" maxlength="25" required>
+                    <br>
+                        <label for="lastName"><span>* </span>Last Name</label>
+                        <input type="text" id="lastName" placeholder="Last Name"
+                            name="lastName" maxlength="25" required>
+                    <br>
+                        <label for="email"><span>* </span>Email</label>
+                        <input type="email" id="email"
+                            placeholder="Example@Example.com" name="email"
+                            required />
+                    <br>
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="tel" id="phoneNumber" placeholder="999-999-999"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phoneNumber">
+                    <br>
+                    <div>
+                        <label for="phoneType">Phone Type</label><br />
+                        <input type="radio" id="phoneType" name="phoneType"
+                            value="Home"> Home<br />
+                        <input type="radio" name="phoneType" value="Cell">
+                        Cell<br />
+                        <input type="radio" name="phoneType" value="Work"> Work
+                    </div>
+                    <br>
+                    <div>
+                        <label for="infoRequest">Information
+                            Requesting</label><br/>
+                        <input type="checkbox" id="infoRequest" name="Collections"
+                            value="Collections"> Collections<br/>
+                        <input type="checkbox" name="Trade-Ins" value="Trade-Ins">
+                        Trade-Ins<br/>
+                        <input type="checkbox" name="AddToMailing"
+                            value="Add To Mailing"> Add To Mailing
+                    </div>
+                    <br>
+                    <div>
+                        <button id="submit" type="submit">Submit</button>
+                        <button type="reset">Clear</button>
+                    </div>
+                </form>
+
+            </section>
+        </main>
+
+        <footer>
+            <p>Golden Pulps: A Comic Book Resource for Collectors and Fans</p>
+            <address>Project 2 - Tolga Sahiner</address>
+        </footer>
+    </body>
+
+</html>

@@ -1,0 +1,33 @@
+/*********************
+    Homepage stylesheet
+**********************/
+
+.homepagePictures img{
+    width: 25%;
+    
+}
+h1{
+    text-align: center;
+    padding: 1em;
+}
+.card{
+    width: 75%;
+    margin: 0 auto;
+    background-color: #e4e0dc;
+}
+article{
+    width: 85%;
+    margin: 3em auto;
+}
+.btn{
+    display: block;
+    color: white !important;
+    background-color: #03692F;
+
+}
+.btn:hover{
+    background-color: #6D4F02;
+}
+.card-body{
+    margin: 0 auto;
+}

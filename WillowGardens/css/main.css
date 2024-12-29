@@ -1,0 +1,82 @@
+/*******************************
+  Main stylesheet - all pages
+*******************************/
+
+body {
+  background-color: #e4e0dc;
+}
+
+/*******************************
+  Navigation
+*******************************/
+header {
+  background-color: #e4e0dc;
+  border-bottom: 2px solid #03692F;
+}
+a img{
+  width: 45%;
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+nav ul li a{
+  border: 1px solid #03692F;
+  border-radius: .5em;
+  padding: .5em;
+  background-color: lavenderblush;
+  text-align: center;
+ 
+}
+
+/*******************************
+  Main
+*******************************/
+main{
+  width: 85%;
+  margin: 2em auto;
+  background-color: #8FBC8F;
+  padding: 3em;
+}
+
+
+/*******************************
+  Links
+*******************************/
+a{
+  text-decoration: none;
+}
+a:link {
+    color: #03692F;
+}
+a:hover {
+    color: #6D4F02;
+}
+a:visited {
+    color: #5B875C;
+}
+
+/*******************************
+  Headings
+*******************************/
+h1, h2, h3, h4 {
+  color: #6D4F02;
+  font-family: Garamond;
+}
+
+/*******************************
+  Footer
+*******************************/
+footer{
+  border-top: 2px solid #03692F;
+  padding: 2em 0;
+}
+.contacts{
+  display: flex;
+  flex-direction: column;
+}
+.socialMedias{
+  display: flex;
+  flex-direction: column;
+}
